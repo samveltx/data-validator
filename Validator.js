@@ -1,4 +1,4 @@
-class Validator {
+module.extends = class Validator {
 
    isString(str) {
      if (typeof str === 'string' || str instanceof String){
@@ -45,10 +45,10 @@ class Validator {
    isDate(d) {
      var dateFormat = /^\d{1,4}[\.|\/|-]\d{1,2}[\.|\/|-]\d{1,4}$/;
 
-   if (dateFormat.test(s)) {
+   if (dateFormat.test(d)) {
        // remove any leading zeros from date values
-       s = s.replace(/0*(\d*)/gi,"$1");
-       var dateArray = s.split(/[\.|\/|-]/);
+       d = d.replace(/0*(\d*)/gi,"$1");
+       var dateArray = d.split(/[\.|\/|-]/);
 
              // correct month value
        dateArray[1] = dateArray[1]-1;
