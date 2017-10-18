@@ -1,4 +1,4 @@
-module.extends = class Validator {
+class Validator {
 
    isString(str) {
      if (typeof str === 'string' || str instanceof String){
@@ -71,3 +71,5 @@ module.extends = class Validator {
 }
    } // returns true if d is a valid date
 }
+
+module.exports = Validator;

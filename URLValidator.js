@@ -1,5 +1,5 @@
 const Validator = requir('./Validator.js');
-module.extends = class URLValidator extends Validator{
+class URLValidator extends Validator{
   isURL(url){
     let urlRegExp = /^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(.*)?(#[\w\-]+)?$/;
     if(urlRegExp.test(url))
@@ -9,3 +9,7 @@ module.extends = class URLValidator extends Validator{
   }
   }
 }
+
+module.exports = Validator;
+
+

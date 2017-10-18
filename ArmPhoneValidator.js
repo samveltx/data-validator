@@ -1,5 +1,5 @@
 const Validator = require('./Validator.js');
-module.extends = class ArmPhoneValidator extends Validator{
+class ArmPhoneValidator extends Validator{
   isArmPhoneNumber(phonenum){
     if(!phonenum || !super.isNumber(phonenum))
       return false;
@@ -9,4 +9,6 @@ module.extends = class ArmPhoneValidator extends Validator{
     return false;
   }
 }
+
+module.exports = Validator;
 

@@ -1,5 +1,5 @@
 const Validator = requir('./Validator.js');
-module.extends = class EmailValidator extends Validator{
+class EmailValidator extends Validator{
   isEmail(email){
   let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@
   ((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -11,3 +11,6 @@ module.extends = class EmailValidator extends Validator{
   }
 }
 }
+
+module.exports = Validator;
+
