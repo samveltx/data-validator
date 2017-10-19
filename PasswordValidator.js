@@ -15,4 +15,4 @@ class PasswordValidator extends Validator{
 
   }
 }
-module.exports = Validator;
+module.exports = PasswordValidator;

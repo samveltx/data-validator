@@ -10,5 +10,5 @@ class ArmPhoneValidator extends Validator{
   }
 }
 
-module.exports = Validator;
+module.exports = ArmPhoneValidator;
 

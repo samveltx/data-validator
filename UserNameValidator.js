@@ -16,4 +16,4 @@ class UsernameValidator extends Validator{
   }
 }
 
-module.exports = Validator;
+module.exports = UsernameValidator;

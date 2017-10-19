@@ -12,5 +12,5 @@ class EmailValidator extends Validator{
 }
 }
 
-module.exports = Validator;
+module.exports = EmailValidator;
 

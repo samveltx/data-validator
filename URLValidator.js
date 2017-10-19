@@ -10,6 +10,6 @@ class URLValidator extends Validator{
   }
 }
 
-module.exports = Validator;
+module.exports = URLValidator;
 
 
